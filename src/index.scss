@@ -101,7 +101,11 @@ code {
   box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Didact+Gothic|Marmelad|Neucha|Sawarabi+Gothic|Scada');
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic');
+
+#root {
+  width: 100vw;
+}
 
 .TodoApp {
   font-family: 'Didact Gothic', Arial, sans-serif;
@@ -173,6 +177,7 @@ code {
   user-select: none;
   overflow: hidden;
   white-space: nowrap;
+  cursor: pointer;
   span {
     display: inline;
     position: relative;
@@ -194,6 +199,7 @@ code {
     }
   }
   &.no-todos {
+    cursor: default;
     span {
       text-transform: lowercase;
       opacity: 0.5;
